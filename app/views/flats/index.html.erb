@@ -1,0 +1,8 @@
+<h1>Flats</h1>
+  <% @flats.each do |flat|%>
+  <%= link_to flat.title, flat_path(flat) %>
+  <%= flat.description %>
+  <%= flat.price %>
+<% end  %>
+
+<%= link_to "Create new flat", new_flat_path, class: "btn btn-primary" %>

@@ -1,0 +1,11 @@
+<%= simple_form_for @flat do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :price %>
+  <%= f.submit "Create Flat"%>
+<% end %>
+
+
+<%= @flat.title  %>
+
+<%= link_to "Back to home", flats_path, class: "btn btn-secondary"  %>
